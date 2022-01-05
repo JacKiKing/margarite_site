@@ -1,23 +1,4 @@
 /*гамбургер*/
-/*.hamburger-menu{
-	width: 60px;
-	height: 24px;
-	border: 7px solid #fff;
-	margin-top: 24px;
-    margin-right: 36px;
-    border-left: 0;
-    border-right: 0;
-    cursor: pointer;
-    display: none;
-}
-
-.hamburger-menu__line{
-	margin-top: 7px;
-	width: 60px;
-	height: 1px;
-	border-bottom: 7px solid #fff;
-}*/
-
 nav{
 	height: 40px;
 }
@@ -86,7 +67,6 @@ text-decoration: none;
   display: block;
   margin: 0;
   -webkit-transition: linear 1s;
-  transition: linear 1s;
 }
 
 #contain {
@@ -135,11 +115,6 @@ header{
     justify-content: space-between;
     background-color: #000;
 }
-
-/*nav{
-	height: 24px;
-	font-size: 24px;
-}*/
 
 nav > a {
 	transition: 0.5s;
@@ -223,6 +198,74 @@ nav > a:last-child{
 	text-shadow: 1px 1px 2px red, 0 0 1em cyan;
 	transition: 1s;
 }
+
+#nav > li:hover {
+	text-shadow: 1px 1px 2px red, 0 0 1em cyan;
+	transition: 0.5s;
+}
+
+#nav > li>a:active {
+	color: orange;
+	text-shadow: 1px 1px 2px red;
+}
+
+#nav > li {
+	text-shadow: 1px 1px 2px red;
+	transition: 0.5s;
+}
+
+/*end header*/
+
+/*start galery*/
+.galery{
+	background-image: URL('../img/fon-1.jpg');
+	width: 100%;
+	height: 750px;
+	background-repeat: no-repeat;
+	margin: 0;
+	background-size: cover;
+	text-align: center;
+}
+
+.galery__title{
+    padding-top: 45px;
+    font-size: 60px;
+    margin: 0;
+}
+
+main{
+	position: relative;
+	top: -2px;
+}
+
+.buy{
+	width: 150px;
+    height: 50px;
+}
+
+.buy-img:hover::before, .buy-img:hover::after{
+	content: url('../img/fire.png');
+	top: 40px;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media screen and (min-width: 450px) and (max-width: 750px) {
 	.logo{
 		display: none;
@@ -253,6 +296,21 @@ nav > a:last-child{
 	#mail{
 		font-size: 18px;
 	}
+		#nav{
+		display: flex;
+		margin: 0;
+		position: relative;
+		height: auto;
+		max-height: 500px; 
+		-webkit-transition: linear 1s;
+		transition: linear 1s;
+	}
+	#nav>li{
+		text-align: center;
+	}
+	.burger-nav, #contain{
+		display: none;
+	}
 }
 
 @media screen and (min-width: 1100px) and (max-width: 1999px){
@@ -264,5 +322,19 @@ nav > a:last-child{
 	.logo__text{
 		padding-top: 28px;
 	}
-
+	#nav{
+		display: flex;
+		margin: 0;
+		position: relative;
+		height: auto;
+		max-height: 500px; 
+		-webkit-transition: linear 1s;
+		transition: linear 1s;
+	}
+	#nav>li{
+		text-align: center;
+	}
+	.burger-nav, #contain{
+		display: none;
+	}
 }
