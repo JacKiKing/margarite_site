@@ -1,3 +1,6 @@
+body{
+	font-family: 'PT Sans Narrow', sans-serif;
+}
 /*гамбургер*/
 nav{
 	height: 40px;
@@ -28,14 +31,15 @@ header .wrapper {
 }
 
 #nav {
-  overflow: hidden;
-  background: #505050;
-  height: 0;
-  max-height: 0px; 
-  list-style-type: none;
-  padding-left: 0;
-  -webkit-transition: linear 1s;
-  transition: linear 1s;
+	z-index: 9999;
+	overflow: hidden;
+	background: #505050;
+	height: 0;
+	max-height: 0px; 
+	list-style-type: none;
+	padding-left: 0;
+	-webkit-transition: linear 1s;
+	transition: linear 1s;
 }
 
 #nav.open {
@@ -220,7 +224,7 @@ nav > a:last-child{
 .galery{
 	background-image: URL('../img/fon-1.jpg');
 	width: 100%;
-	height: 750px;
+	height: 555px;
 	background-repeat: no-repeat;
 	margin: 0;
 	background-size: cover;
@@ -250,20 +254,93 @@ main{
 	cursor: pointer;
 }
 
+/*button buy*/
+
+.buy {
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  padding: .5em 2em;
+  outline: none;
+  border-width: 2px 0;
+  border-style: solid none;
+  border-color: #FDBE33 #000 #D77206;
+  border-radius: 6px;
+  background: linear-gradient(#F3AE0F, #E38916) #E38916;
+  transition: 0.2s;
+  cursor: pointer;
+} 
+.buy:hover { background: linear-gradient(#f5ae00, #f59500) #f5ae00; }
+.buy:active { background: linear-gradient(#f59500, #f5ae00) #f59500; }
+
+.galery__text{
+	margin: 30px 0px;
+}
 
 
+/*description*/
+#description__list{
+	display: flex;
+	justify-content: space-around;
+}
+
+.description__list-item{
+	list-style: none;
+}
+
+.description__title{
+	text-align: center;
+	margin-top: 70px;
+    margin-bottom: 50px;
+    font-size: 24px;
+}
+
+.description__block{
+    width: 250px;
+    border: 1px solid darkgray;
+    text-align: center;
+    border-radius: 12px;
+    padding: 17px;
+}
+
+.description__block-icon{
+    width: 100px;
+    height: 100px;
+}
+
+.description__block-line{
+
+}
+
+.description__block-text{
+
+}
 
 
+.form{
+	width: 400px;
+    text-align: center;
+}
 
+.form > input{
+	padding: 15px;
+    font-size: 18px;
+    border-radius: 19px;
+    margin-bottom: 50px;
+}
 
+.btn{
+	width: 250px;
+    padding: 20px 0;
+    font-size: 20px;
+    background-color: gold;
+    border-radius: 15px;
+    cursor: pointer;
+}
 
-
-
-
-
-
-
-
+.formzone{
+	
+}
 
 
 @media screen and (min-width: 450px) and (max-width: 750px) {
